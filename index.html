@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz with 3 questions</title>
+  <title>Quiz cu 3 întrebări</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -70,37 +70,38 @@
 <body>
   <div class="quiz-container">
     <div id="intro" class="intro active">
-      <h1>Welcome to the fourth check point! </h1>
-      <p> Some would say that the UE has not helped us with anything. <br>
-        So we will start with a journey back in time. Take the whole team down in
-        the Romanian Consumer Museum and see what it was like before Romania joined the EU. </p>
+      <h1>Bine ai venit la cel de-al patrulea checkpoint!</h1>
+      <p>Unii ar spune că Uniunea Europeană nu ne-a ajutat cu nimic. <br>
+        Vom începe cu o călătorie în timp. Mergeți toată echipa jos
+        în Muzeul Consumatorului Român și vedeți cum era înainte ca România să facă parte din UE </p>
       <button onclick="startQuiz()">Start</button>
     </div>
     <div id="q1" class="question">
-      <h2>1. What year did Romania join the European Union?</h2>
+      <h2>1. În ce an a aderat România la Uniunea Europeană?</h2>
       <button onclick="checkAnswer(1, 'a')">a) 2007</button>
       <button onclick="checkAnswer(1, 'b')">b) 2009</button>
       <button onclick="checkAnswer(1, 'c')">c) 2004</button>
     </div>
 
     <div id="q2" class="question">
-      <h2>2. How does Romania receive EU money for regional development?</h2>
-      <button onclick="checkAnswer(2, 'a')">a) International Monetary Fund</button>
-      <button onclick="checkAnswer(2, 'b')">b) EU structural and investment funds</button>
-      <button onclick="checkAnswer(2, 'c')">c) European Central Bank</button>
+      <h2>2. Prin ce mecanism România primește bani de la Uniunea Europeană pentru dezvoltare regională?</h2>
+      <button onclick="checkAnswer(2, 'a')">a) Fondul Monetar Internațional</button>
+      <button onclick="checkAnswer(2, 'b')">b) Fondurile structurale și de investiții europene</button>
+      <button onclick="checkAnswer(2, 'c')">c) Banca Centrală Europeană</button>
     </div>
 
     <div id="q3" class="question">
-      <h2>3. How do Romanian consumers benefit from Romania being in the European Union? </h2>
-      <button onclick="checkAnswer(3, 'a')">a) Access to a wider variety of products that meet European quality standards</button>
-      <button onclick="checkAnswer(3, 'b')">b) They can only buy products from Romania</button>
-      <button onclick="checkAnswer(3, 'c')">c) Can no longer return goods bought in other EU countries</button>
+      <h2>3. Ce beneficiu au consumatorii români datorită faptului că România este în Uniunea Europeană?</h2>
+      <button onclick="checkAnswer(3, 'a')">a) Acces la o varietate mai mare de produse care respectă standarde europene de calitate</button>
+      <button onclick="checkAnswer(3, 'b')">b) Pot cumpăra produse doar din România</button>
+      <button onclick="checkAnswer(3, 'c')">c) Nu mai pot returna produsele cumpărate din alte țări UE</button>
     </div>
 
     <div id="success" class="success-message">
-      <h1>🎉 Congratulations! You have finished the quiz! </h1><br>
-    <p>Send to the number you have already saved 3 benefits you enjoy in the EU in everyday your life! :D</p><br>
-      <h5>In order to be able to move on to the next checkpoint, send a photo of the whole team standing in front of Scârț :D</h5>
+      <h1>🎉 Felicitări! Ai terminat quiz-ul! </h1><br>
+    <p>Trimiteți pe numărul deja salvat 3 beneficii de care aveți voi parte în UE în viața de zi cu zi, de exemplu votul este atât un drept, cât și un beneficiu!  :D</p><br>
+      <h5>Pentru a putea porni spre următorul checkpoint trimite și o poză cu toată echipa stând în fața la Scârț, cu textul "Reminder să mergi la vot duminică!" și 
+        dă tag @fitt și @edtimisoara:D</h5>
     </div>
   </div>
 
@@ -120,7 +121,7 @@
           document.getElementById('success').classList.add('active');
         }
       } else {
-        alert("Wrong answer! Try again.");
+        alert("Răspuns greșit! Încearcă din nou.");
       }
     }
   </script>
